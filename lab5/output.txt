@@ -1,0 +1,8 @@
+CREATE DATABASE
+You are now connected to database "university_db"
+
+CREATE DATABASE
+You are now connected to database "postgres"
+
+DROP DATABASE
+DROP DATABASE
