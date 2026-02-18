@@ -1,0 +1,15 @@
+CREATE TABLE
+INSERT 0 3
+
+ name    |        email
+---------+----------------------
+ Alymbek | alymbek@example.com
+ Timur   | timur@example.com
+ Beka    | beka@example.com
+
+ Timur | timur@example.com
+
+ Alymbek | alymbek@example.com
+ Timur   | timur@example.com
+
+DROP TABLE
