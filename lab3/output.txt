@@ -1,0 +1,9 @@
+CREATE TABLE
+INSERT 0 2
+
+ id | name  | age
+----+-------+-----
+  1 | Asan  | 21
+  2 | Ali   | 20
+
+DROP TABLE
