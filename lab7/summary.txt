@@ -1,0 +1,9 @@
+In this lab I learned about Primary Keys in PostgreSQL.
+Primary key uniquely identifies each row in a table.
+It cannot contain NULL values and must be unique.
+I learned how to:
+- create primary keys during table creation
+- add composite primary keys
+- use SERIAL for auto-increment values
+- use IDENTITY columns
+Primary keys also automatically create indexes and help maintain relationships between tables
