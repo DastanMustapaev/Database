@@ -1,0 +1,12 @@
+In this lab I learned the basics of database design.
+Database design is the process of organizing data efficiently before creating tables.
+I studied Entity-Relationship modeling which includes:
+- entities (tables)
+- attributes (columns)
+- relationships between tables.
+I learned about normalization:
+1NF – atomic values
+2NF – no partial dependency
+3NF– no transitive dependency
+Good database design reduces redundancy, improves data integrity
+and makes databases scalable and maintainable.
