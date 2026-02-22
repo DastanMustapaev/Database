@@ -1,0 +1,9 @@
+In this lab I learned about Foreign Keys and table relationships.
+Foreign key connects one table to another using the primary key.
+It helps maintain referential integrity between tables.
+I practiced:
+- creating foreign keys
+- one-to-one relationship
+- one-to-many relationship
+- many-to-many relationship using junction table
+Foreign keys ensure that related data remains consistent.
