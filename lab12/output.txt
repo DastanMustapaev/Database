@@ -1,0 +1,58 @@
+CREATE TABLE
+
+INSERT 0 4
+
+
+SELECT *
+ id |   name    | department  | salary |        email
+----+-----------+-------------+--------+---------------------
+ 1  | Aibek     | Sales       | 70000  | aibek@gmail.com
+ 2  | Nursultan | Engineering | 90000  | nur@gmail.com
+ 3  | Meerim    | Engineering |120000  | meerim@yahoo.com
+ 4  | Bakyt     | HR          | 50000  | bakyt@gmail.com
+(4 rows)
+
+
+SELECT name, salary
+ name      | salary
+-----------+--------
+ Nursultan | 90000
+ Meerim    |120000
+(2 rows)
+
+
+SELECT name, salary, salary * 0.10 AS bonus
+ name      | salary | bonus
+-----------+--------+-------
+ Aibek     | 70000  | 7000
+ Nursultan | 90000  | 9000
+ Meerim    |120000  |12000
+ Bakyt     | 50000  | 5000
+(4 rows)
+
+
+SELECT email
+        email
+---------------------
+ aibek@gmail.com
+ nur@gmail.com
+ bakyt@gmail.com
+(3 rows)
+
+
+SELECT name, salary, level
+ name      | salary | level
+-----------+--------+--------
+ Aibek     | 70000  | Mid
+ Nursultan | 90000  | Mid
+ Meerim    |120000  | Senior
+ Bakyt     | 50000  | Junior
+(4 rows)
+
+
+WITH avg_salary AS (...)
+ name      | salary
+-----------+--------
+ Nursultan | 90000
+ Meerim    |120000
+(2 rows)
