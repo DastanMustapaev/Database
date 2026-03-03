@@ -1,0 +1,47 @@
+CREATE TABLE
+INSERT 0 5
+
+Subquery (salary > average)
+ first_name | salary
+------------+--------
+ Meerim     |120000
+ Nursultan  | 90000
+(2 rows)
+
+CTE result
+ first_name | department  | salary | avg_salary
+------------+-------------+--------+------------
+ Aibek      | Sales       | 70000  | 67500
+ Ainura     | Sales       | 65000  | 67500
+ Meerim     | Engineering |120000  |105000
+ Nursultan  | Engineering | 90000  |105000
+ Bakyt      | HR          | 50000  | 50000
+(5 rows)
+
+Recursive CTE
+ employee_id | first_name | manager_id
+-------------+------------+------------
+ 1           | Aibek      | NULL
+ 2           | Meerim     | NULL
+ 4           | Bakyt      | NULL
+ 3           | Nursultan  | 2
+ 5           | Ainura     | 1
+(5 rows)
+
+Window Function
+ first_name | department  | salary | dept_rank
+------------+-------------+--------+-----------
+ Meerim     | Engineering |120000  | 1
+ Nursultan  | Engineering | 90000  | 2
+ Aibek      | Sales       | 70000  | 1
+ Ainura     | Sales       | 65000  | 2
+ Bakyt      | HR          | 50000  | 1
+(5 rows)
+
+UNION result
+ first_name
+------------
+ Aibek
+ Ainura
+ Bakyt
+(3 rows)
