@@ -1,0 +1,46 @@
+CREATE TABLE
+INSERT 0 5
+
+SELECT COUNT(*) AS total_employees
+ total_employees
+-----------------
+ 5
+(1 row)
+
+
+SELECT SUM(salary) AS total_salary
+ total_salary
+--------------
+ 395000
+(1 row)
+
+
+SELECT AVG(salary) AS average_salary
+ average_salary
+----------------
+ 79000
+(1 row)
+
+
+SELECT MAX(salary), MIN(salary)
+ max_salary | min_salary
+------------+------------
+ 120000     | 50000
+(1 row)
+
+
+SELECT department, COUNT(*), AVG(salary)
+ department  | employee_count | avg_salary
+-------------+----------------+------------
+ Sales       | 2              | 67500
+ Engineering | 2              |105000
+ HR          | 1              | 50000
+(3 rows)
+
+
+SELECT department HAVING COUNT(*) > 1
+ department  | employee_count
+-------------+----------------
+ Sales       | 2
+ Engineering | 2
+(2 rows)
