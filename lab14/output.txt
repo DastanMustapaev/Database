@@ -1,0 +1,42 @@
+CREATE TABLE
+CREATE TABLE
+INSERT 0 3
+INSERT 0 3
+
+
+INNER JOIN
+ name      | order_date | total_amount
+-----------+------------+-------------
+ Aibek     | 2024-01-10 | 150.00
+ Aibek     | 2024-02-05 | 200.00
+ Meerim    | 2024-03-01 | 300.00
+(3 rows)
+
+
+LEFT JOIN
+ name      | order_date
+-----------+------------
+ Aibek     | 2024-01-10
+ Aibek     | 2024-02-05
+ Meerim    | 2024-03-01
+ Nursultan | NULL
+(4 rows)
+
+
+RIGHT JOIN
+ name   | order_date
+--------+------------
+ Aibek  | 2024-01-10
+ Aibek  | 2024-02-05
+ Meerim | 2024-03-01
+(3 rows)
+
+
+FULL OUTER JOIN
+ name      | order_date
+-----------+------------
+ Aibek     | 2024-01-10
+ Aibek     | 2024-02-05
+ Meerim    | 2024-03-01
+ Nursultan | NULL
+(4 rows)
