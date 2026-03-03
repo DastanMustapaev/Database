@@ -1,0 +1,39 @@
+CREATE TABLE
+INSERT 0 2
+
+
+BEGIN
+UPDATE 1
+UPDATE 1
+COMMIT
+
+ account_id | owner   | balance
+------------+---------+---------
+ 1          | Aibek   | 800.00
+ 2          | Meerim  | 700.00
+(2 rows)
+
+
+BEGIN
+UPDATE 1
+ROLLBACK
+
+ account_id | owner   | balance
+------------+---------+---------
+ 1          | Aibek   | 800.00
+ 2          | Meerim  | 700.00
+(2 rows)
+
+
+BEGIN
+UPDATE 1
+SAVEPOINT
+UPDATE 1
+ROLLBACK
+COMMIT
+
+ account_id | owner   | balance
+------------+---------+---------
+ 1          | Aibek   | 700.00
+ 2          | Meerim  | 700.00
+(2 rows)
